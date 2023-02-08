@@ -14,7 +14,8 @@ export interface TopBarProps {
 
 export const TopBar: React.FC<TopBarProps> = ({ className, user }) => {
     const avatar =
-        user?.avatar || 'https://t4.ftcdn.net/jpg/03/32/59/65/240_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg';
+        user?.avatar ||
+        'https://t4.ftcdn.net/jpg/03/32/59/65/240_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg';
     return (
         <aside className={`${styles.root} ${className || ''}`}>
             <Avatar url={avatar} username={user?.username} />
