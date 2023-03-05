@@ -9,7 +9,7 @@ Codux is an all-in-one visual development environment. Whether you’re starting
 
 ### Take it for a Spin
 
-This repo is a fictive git provider front-end application. You can modify the components that compose the user's profile page within this app. It's a great way to explore how Codux works. 
+This repo is a fictive git provider front-end application. You can modify the components that compose the user's profile page within this app. It's a great way to explore how Codux works.
 
 -   Learn how to edit, render and compose apps that make use of **`React`**-based components.
 -   Create components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
