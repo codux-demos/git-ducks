@@ -3,7 +3,7 @@ import { TopBar } from '../../../components/pages/top-bar/top-bar';
 import type { ApiUser } from '../../../model/api-user';
 
 const JohnDoe: ApiUser = {
-    avatar: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+    avatar: 'https://static.wixstatic.com/media/610b66_004fa62e3323486dba584c38fa7f8c6d~mv2.jpg', // janedoe-avatar.jpg (764x955)
     bio: 'Some bio information',
     username: 'jane-doe',
     location: 'USA',

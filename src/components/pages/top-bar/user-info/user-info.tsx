@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { Icon } from '../../../common/icon/icon';
 import { Link } from '../../../common/link/link';
+import classNames from 'classnames';
 import styles from './user-info.module.scss';
 
 export interface UserInfoProps {
@@ -21,7 +22,7 @@ export const UserInfo = memo<UserInfoProps>(function UserInfo({
     url,
 }) {
     return (
-        <ul className={`${styles.root} ${className || ''}`}>
+        <ul className={classNames(styles.root, className)}>
             {organization && (
                 <li className={styles.detail}>
                     <Icon className={styles.icon} name="organization" />
