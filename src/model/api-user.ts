@@ -49,11 +49,11 @@ export const parseUserResponse = (response: UserResponse): ApiUser => {
         url: response.user.websiteUrl,
         techs: response.user.techs,
         organizations: response.user.organizations.edges
-                               .map(({ node }) => node)
-                               .map((organization) => ({
-                                   avatar: organization.avatarUrl,
-                                   login: organization.login,
-                               })),
+            .map(({ node }) => node)
+            .map((organization) => ({
+                avatar: organization.avatarUrl,
+                login: organization.login,
+            })),
     };
 };
 

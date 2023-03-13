@@ -14,7 +14,7 @@ const JohnDoe: ApiUser = {
     organization: '',
     organizations: [],
     techs: {
-        technologies: ['react', 'js']
+        technologies: ['react', 'js'],
     },
 };
 
