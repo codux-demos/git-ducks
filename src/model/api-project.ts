@@ -15,7 +15,9 @@ export interface APIProject {
     description: string;
 }
 
-export const parseProjectsResponse = (response: ProjectsResponse): APIProject[] => {
+export const parseProjectsResponse = (
+    response: ProjectsResponse
+): APIProject[] => {
     return response.user.projects.edges
         .map(({ node }) => node)
         .map((project) => ({
