@@ -1,5 +1,11 @@
 export const documentIcon = (
-    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        width="38"
+        height="38"
+        viewBox="0 0 38 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <rect width="38" height="38" rx="4" fill="#F54EBC" fillOpacity="0.3" />
         <path
             fillRule="evenodd"

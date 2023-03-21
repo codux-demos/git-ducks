@@ -30,7 +30,7 @@ export interface ApiContributions {
 
 const deriveContributionLevel = (
     count: number,
-    max: number,
+    max: number
 ): ContributionLevel => {
     if (count === 0) {
         return {};
@@ -53,15 +53,15 @@ const getMaxContribution = (weeksData: WeekData[]) =>
     Math.max(
         ...weeksData
             .map(({ contributionDays: week }) =>
-                     week
-                         .filter((day) => day.contributionCount > 0)
-                         .map(({ contributionCount }) => contributionCount),
+                week
+                    .filter((day) => day.contributionCount > 0)
+                    .map(({ contributionCount }) => contributionCount)
             )
-            .flat(),
+            .flat()
     );
 
 export const parseContributionsResponse = (
-    response: ContributionResponse,
+    response: ContributionResponse
 ): ApiContributions => {
     const {
         user: {
@@ -73,18 +73,18 @@ export const parseContributionsResponse = (
             },
         },
     } = response;
-    
+
     const max = getMaxContribution(weeksData);
-    
+
     const weeks = weeksData.map(({ contributionDays: week }) =>
-                                    week.map((day) => ({
-                                        ...day,
-                                        contributionLevel: deriveContributionLevel(
-                                            day.contributionCount,
-                                            max,
-                                        ),
-                                    })),
+        week.map((day) => ({
+            ...day,
+            contributionLevel: deriveContributionLevel(
+                day.contributionCount,
+                max
+            ),
+        }))
     );
-    
+
     return { total, max, weeks };
 };
