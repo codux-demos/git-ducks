@@ -1,0 +1,17 @@
+name: 'build'
+on:
+    push:
+    pull_request:
+jobs:
+    build:
+        runs-on: ${{ matrix.platform }}
+        timeout-minutes: 3
+        strategy:
+            fail-fast: false
+            matrix:
+                platform: ['windows-latest', 'ubuntu-latest']
+                node-version: [18, 16, 14]
+        steps:
+            - uses: actions/checkout@v2
+            - run: npm i
+            - run: npm run build
