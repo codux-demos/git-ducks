@@ -8,4 +8,5 @@ export default createBoard({
             Muted Link
         </Link>
     ),
+    isSnippet: true,
 });

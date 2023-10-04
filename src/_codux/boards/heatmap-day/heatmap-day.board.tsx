@@ -14,4 +14,5 @@ export default createBoard({
             left: 24,
         },
     },
+    isSnippet: true,
 });

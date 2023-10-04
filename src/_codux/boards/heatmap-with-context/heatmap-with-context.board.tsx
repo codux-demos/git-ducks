@@ -10,4 +10,5 @@ export default createBoard({
             <HeatmapWithContext />
         </HeatmapContext.Provider>
     ),
+    isSnippet: true,
 });

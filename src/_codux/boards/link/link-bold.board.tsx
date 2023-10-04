@@ -8,4 +8,5 @@ export default createBoard({
             Bold Link
         </Link>
     ),
+    isSnippet: true,
 });
