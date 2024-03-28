@@ -1,8 +1,6 @@
 .root {
-    //test
     display: flex;
     flex-direction: column;
-    overflow: scroll;
 }
 
 .page {
@@ -16,5 +14,4 @@
     margin: 0 auto;
     padding: 0 var(--page-padding);
     gap: 0;
-    overflow: scroll;
 }
