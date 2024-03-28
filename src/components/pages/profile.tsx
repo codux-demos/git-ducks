@@ -60,7 +60,7 @@ export const Profile = ({ className, user }: ContentProps) => {
                         },
                     ]}
                 />
-                <Overview />
+                <Overview className={styles.test} />
             </main>
         </div>
     );
